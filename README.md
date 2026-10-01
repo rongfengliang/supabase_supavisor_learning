@@ -1,5 +1,34 @@
 # supabase supavisor learning
 
+## jwt format
+
+
+* header (like)
+
+```code
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+
+* payload (like)
+
+```code
+{
+  "iss": "supabase",
+  "role": "anon",
+  "iat": 1645192824,
+  "exp": 9999999999
+}
+```
+
+* Sign JWT
+
+```code
+API_JWT_SECRET env
+```
+
 ## init tenant
 
 * init tenant db command
