@@ -1,6 +1,8 @@
 services:
   db:
     image: postgres:18.4
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
     ports:
       - "6432:5432"
     environment:
@@ -8,6 +10,8 @@ services:
       POSTGRES_USER: postgres
   dbv1:
     image: postgres:18.4
+    volumes:
+      - ./initv1:/docker-entrypoint-initdb.d
     ports:
       - "6433:5432"
     environment:

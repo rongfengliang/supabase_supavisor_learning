@@ -63,5 +63,7 @@ curl  -X PUT \
 * connect 
 
 ```code
+psql postgresql://postgres.dev_tenant:postgres@localhost:6543/postgres
+psql postgresql://postgres.dev_tenantv1:postgres@localhost:6543/postgres
 
 ```
